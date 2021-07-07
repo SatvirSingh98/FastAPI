@@ -6,8 +6,8 @@ from sqlalchemy.sql import func
 Base = declarative_base()
 
 
-class Book:
-    __tablename__ = 'book'
+class Book(Base):
+    __tablename__ = "book"
     id = Column(Integer, primary_key=True, index=True)
     title = Column(String)
     time_created = Column(DateTime(timezone=True), server_default=func.now())

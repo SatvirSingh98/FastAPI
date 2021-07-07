@@ -1,9 +1,5 @@
-.git
-.gitignore
+.*
 __pycache__
-.venv
-.vscode
-.env
 README.md
-Dockerfile*
-docker-compose*
+Dockerfile
+docker-compose.yml

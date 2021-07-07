@@ -10,3 +10,11 @@
 #### In the routes we can also provide path params which FastAPI recoganises if they are in curly braces, otherwise if we only give params in the function arguments they are treated as query params.
 
 #### When you need to send data from a client (let's say, a browser) to your API, you send it as a request body.
+
+<h4>Commands:</h4>
+<p>
+    <li>For building docker containers and images: "docker-compose up"</li>
+    <li>For rebuilding images: "docker-compose build"</li>
+    <li>For database migration: "docker-compose run app alembic revision --autogenerate -m 'commit message'"</li>
+    <li>For commiting to database: "docker-compose run alembic upgrade head"</li>
+</p>
